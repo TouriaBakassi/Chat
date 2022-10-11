@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-tutorial/static/css/main.5ed77d6d.css",
-    "main.js": "/react-tutorial/static/js/main.661d3b75.js",
-    "static/media/backg.jpg": "/react-tutorial/static/media/backg.b596837b0f5bf330bc0e.jpg",
-    "index.html": "/react-tutorial/index.html",
-    "main.5ed77d6d.css.map": "/react-tutorial/static/css/main.5ed77d6d.css.map",
-    "main.661d3b75.js.map": "/react-tutorial/static/js/main.661d3b75.js.map"
+    "main.css": "/Chat/static/css/main.72b345d1.css",
+    "main.js": "/Chat/static/js/main.661d3b75.js",
+    "static/media/backg.jpg": "/Chat/static/media/backg.b596837b0f5bf330bc0e.jpg",
+    "index.html": "/Chat/index.html",
+    "main.72b345d1.css.map": "/Chat/static/css/main.72b345d1.css.map",
+    "main.661d3b75.js.map": "/Chat/static/js/main.661d3b75.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ed77d6d.css",
+    "static/css/main.72b345d1.css",
     "static/js/main.661d3b75.js"
   ]
 }
