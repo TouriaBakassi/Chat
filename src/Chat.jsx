@@ -11,8 +11,8 @@ export class Chat extends Component {
       Allchat: [],
       input: "",
     };
-    this.questions = ["hello", "how are you ?", "what is your name ?"];
-    this.reponses = ["hi", "i am fine, what about you?", "my name is touria"];
+    this.questions = ["hello ", "how are you ?", "what is your name ?","good luck 🤗",];
+    this.reponses = ["hi 🙋‍♀️", "i am fine, what about you?", "my name is touria","thank you 🥰"];
   }
 
   handlecatch = (e) => {
@@ -33,6 +33,9 @@ export class Chat extends Component {
         chat.message = "Sorry Can't Undrastand You !";
       }
     }
+    setTimeout(()=>{
+      this.setState({chat:{message:chat.message}})
+    },5000)
     Allchat.push(chat);
     this.setState({ input: "", chat:{message:chat.message}, Allchat: Allchat });
 
@@ -56,7 +59,11 @@ export class Chat extends Component {
 
    
         <form className="form" onSubmit={this.handlechating}>
-      <h1>CHATING...</h1>
+          <div className="chating">
+      <div className="online">
+        <h2>Touria Bk</h2>
+        <h5>  online<div></div></h5>
+      </div>
 
         <div className="CHAT">
 {Allchat.map((item, index) => {
@@ -67,8 +74,11 @@ export class Chat extends Component {
                 </Fragment>
               );
             })}
+
+
+
+
           </div>
-          
           <div className="Mssg">
             <input
               type="text"
@@ -76,9 +86,9 @@ export class Chat extends Component {
               onChange={this.handlecatch}
             />
             <button type="submit">
-              Envoyer
-              <FontAwesomeIcon className="icon" icon={faPaperPlane} />
+             Envoyer <FontAwesomeIcon className="icon" icon={faPaperPlane} />
             </button>
+          </div>
           </div>
         </form>
       </>
